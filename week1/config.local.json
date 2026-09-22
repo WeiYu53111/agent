@@ -1,13 +1,13 @@
 {
-  "month_budget_usd": 0,
-  "month_remaining_usd": 0,
-  "eval_budget_usd": 0,
-  "eval_remaining_usd": 0,
-  "run_budget_usd": 0,
-  "call_reserve_usd": 0,
-  "input_usd_per_million": 0,
-  "output_usd_per_million": 0,
-  "price_checked_on": "待填写",
+  "month_budget_usd": 9,
+  "month_remaining_usd": 2,
+  "eval_budget_usd": 9,
+  "eval_remaining_usd": 2,
+  "run_budget_usd": 2,
+  "call_reserve_usd": 1,
+  "input_usd_per_million": 1,
+  "output_usd_per_million": 1,
+  "price_checked_on": "20260925",
   "price_source": "https://developers.openai.com/api/docs/pricing",
   "notes": "金额单位为美元；0 表示尚未确认，真实模式将拒绝启动。余额需手动核对。"
 }

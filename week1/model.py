@@ -71,7 +71,11 @@ class OpenAIModel:
         self.model = os.environ.get("OPENAI_MODEL", "")
         if not self.model or not os.environ.get("OPENAI_API_KEY"):
             raise ValueError("真实模式需要 OPENAI_MODEL 与 OPENAI_API_KEY")
-        self.client = AsyncOpenAI(max_retries=0, timeout=30.0)
+        base_url = os.environ.get(
+        "OPENAI_BASE_URL",
+        "https://api.deepseek.com",
+        )
+        self.client = AsyncOpenAI(max_retries=0, timeout=30.0,base_url=base_url)
 
     async def respond(self, history, tools, text_format, max_output_tokens):
         params = dict(model=self.model, input=history, store=False,

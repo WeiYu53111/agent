@@ -220,3 +220,6 @@ __marimo__/
 
 # mac
 .DS_Store
+
+artifacts
+logs
